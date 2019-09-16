@@ -8,7 +8,7 @@ using Nautilus.Cli.Core.FileReaders;
 using Nautilus.Cli.Core.Models;
 using Nautilus.Cli.Core.Models.Http;
 
-namespace Nautilus.Cli.Client.CommandLine.Services
+namespace Nautilus.Cli.Services
 {
 	public class UpdateNugetPackageService
 	{
@@ -25,7 +25,8 @@ namespace Nautilus.Cli.Client.CommandLine.Services
 			_version = version;
 		}
 
-		internal async Task Run()
+		// SHAH: Run to be interfaced along with other services
+		public async Task Run()
         {
             var solution = ReadSolutionStructure();
 

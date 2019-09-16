@@ -7,12 +7,13 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using CommandLine;
 using CommandLine.Text;
+using Nautilus.Cli.Core;
 using Nautilus.Cli.Core.Abstraction;
 
-namespace Nautilus.Cli.Client.CommandLine.Verbs
+namespace Nautilus.Cli.Services.Verbs
 {
 	[Verb("list-packages",  HelpText = "List nuget packages for all projects in the solution")]
-	class ListNugetPackages : VerbBase
+	public class ListNugetPackages : VerbBase
 	{
 		private const string Example_Text = "Finds any conflicting nuget package versions in the solution";
 
@@ -25,7 +26,7 @@ namespace Nautilus.Cli.Client.CommandLine.Verbs
 		[Option("usedebugdata", Required = false, Hidden = true, HelpText = "")]
 		public bool UseDebugData { get; set; }
 
-        [Usage(ApplicationAlias = Program.Name)]
+        [Usage(ApplicationAlias = ApplicationInfo.Name)]
 		public static IEnumerable<Example> Examples
 		{
 			get

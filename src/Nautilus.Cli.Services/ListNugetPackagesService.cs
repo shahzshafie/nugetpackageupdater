@@ -4,16 +4,16 @@ using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using MoreLinq;
-using Nautilus.Cli.Client.CommandLine.Layout;
 using Nautilus.Cli.Core.Components.Http;
 using Nautilus.Cli.Core.Extensions;
 using Nautilus.Cli.Core.FileReaders;
 using Nautilus.Cli.Core.Models;
 using Nautilus.Cli.Core.TestData;
+using Nautilus.Cli.Services.Layout;
 
-namespace Nautilus.Cli.Client.CommandLine.Services
+namespace Nautilus.Cli.Services
 {
-    public class ListNugetPackagesService
+	public class ListNugetPackagesService
 	{
 		private string _solutionFileName;
 		private readonly bool _processProjectsOnly;

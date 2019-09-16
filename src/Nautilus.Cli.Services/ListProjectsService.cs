@@ -1,16 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
+using Nautilus.Cli.Core.Components;
 using Nautilus.Cli.Core.Configurations.Enums;
 using Nautilus.Cli.Core.Exceptions;
 using Nautilus.Cli.Core.FileReaders;
 using Nautilus.Cli.Core.Models;
-using Nautilus.Cli.Core.Components;
-using System.Collections.Generic;
-using Nautilus.Cli.Client.CommandLine.Layout;
+using Nautilus.Cli.Services.Layout;
 
-namespace Nautilus.Cli.Client.CommandLine.Services
+namespace Nautilus.Cli.Services
 {
 	public class ListProjectsService
 	{
@@ -29,7 +29,7 @@ namespace Nautilus.Cli.Client.CommandLine.Services
 			_showNugetPackageUpdates = showNugetPackageUpdates;
 		}
 
-		internal async Task Run()
+		public async Task Run()
 		{
 			Colorful.Console.WriteLine();
 			Colorful.Console.WriteLine("Working. Please wait...", Color.DeepSkyBlue);

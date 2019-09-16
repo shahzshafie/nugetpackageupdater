@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
 using CommandLine;
-using Nautilus.Cli.Client.CommandLine.Services;
-using Nautilus.Cli.Client.CommandLine.Verbs;
 using Nautilus.Cli.Client.OutputMessages;
 using Nautilus.Cli.Core.Exceptions;
 using Nautilus.Cli.Core.TestData;
+using Nautilus.Cli.Services;
+using Nautilus.Cli.Services.Verbs;
 
 namespace Nautilus.Cli.Client
 {

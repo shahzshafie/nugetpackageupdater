@@ -7,11 +7,12 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using CommandLine;
 using CommandLine.Text;
+using Nautilus.Cli.Core;
 
-namespace Nautilus.Cli.Client.CommandLine.Verbs
+namespace Nautilus.Cli.Services.Verbs
 {
 	[Verb("find-package",  HelpText = "Finds the project(s) that depends on the intended nuget package")]
-	class FindPackage
+	public class FindPackage
     {
 		private const string Example_Text = "Finds the project(s) that depends on the intended nuget package";
 
@@ -24,7 +25,7 @@ namespace Nautilus.Cli.Client.CommandLine.Verbs
         [Option("debug", Default = false, Required = false, Hidden = true, HelpText = "Show debugging message including exception and stacktrace messages")]
 		public bool Debug { get; set; }
 
-        [Usage(ApplicationAlias = Program.Name)]
+        [Usage(ApplicationAlias = ApplicationInfo.Name)]
 		public static IEnumerable<Example> Examples
 		{
 			get

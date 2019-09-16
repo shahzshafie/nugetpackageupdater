@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Threading.Tasks;
 
-namespace Nautilus.Cli.Client.CommandLine.Layout
+namespace Nautilus.Cli.Services.Layout
 {
 	internal static class CliStringFormatter
 	{
