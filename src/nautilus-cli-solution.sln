@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nautilus.Cli.Core", "Nautil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nautilus.Cli.Services", "Nautilus.Cli.Services\Nautilus.Cli.Services.csproj", "{7E15C1CB-1241-4FF2-A4FC-FAD29D6256EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NautilusCli.Test.BugSamples", "NautilusCli.Test.BugSamples\NautilusCli.Test.BugSamples.csproj", "{17A90FAF-22B4-4944-8FE0-D640A28AED5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +34,13 @@ Global
 		{7E15C1CB-1241-4FF2-A4FC-FAD29D6256EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E15C1CB-1241-4FF2-A4FC-FAD29D6256EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E15C1CB-1241-4FF2-A4FC-FAD29D6256EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A90FAF-22B4-4944-8FE0-D640A28AED5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A90FAF-22B4-4944-8FE0-D640A28AED5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A90FAF-22B4-4944-8FE0-D640A28AED5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A90FAF-22B4-4944-8FE0-D640A28AED5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5326A1B8-0F12-420B-9143-0FA81CD9BCD0} = {51685194-062E-4561-A7C1-D76CC6FCEAE0}
+		{17A90FAF-22B4-4944-8FE0-D640A28AED5B} = {51685194-062E-4561-A7C1-D76CC6FCEAE0}
 	EndGlobalSection
 EndGlobal

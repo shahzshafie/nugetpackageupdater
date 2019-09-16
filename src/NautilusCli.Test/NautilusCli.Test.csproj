@@ -25,11 +25,16 @@
     <Reference Include="Nautilus.Net">
       <HintPath>..\..\libs\NautilusSDK\Nautilus.Net.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Nautilus.Cli.Core\Nautilus.Cli.Core.csproj" />
+    <Reference Include="Nautilus.TestFramework">
+      <HintPath>..\..\libs\NautilusSDK\Nautilus.TestFramework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nautilus.Cli.Services\Nautilus.Cli.Services.csproj" />
+    <ProjectReference Include="..\NautilusCli.Test.BugSamples\NautilusCli.Test.BugSamples.csproj" />
   </ItemGroup>
 </Project>
