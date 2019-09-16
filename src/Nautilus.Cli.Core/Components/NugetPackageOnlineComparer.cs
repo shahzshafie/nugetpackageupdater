@@ -37,7 +37,7 @@ namespace Nautilus.Cli.Core.Components
 				{
 					var requestor = NugetPackageHttpRequest.QueryRequest(package.PackageName, false);
 					var response = await requestor.ExecuteAsync();
-					var selectedDatum = response.Data.FirstOrDefault(x => x.Id.Equals(package.PackageName));
+					var selectedDatum = response.Data.FirstOrDefault(x => x.Id.ToLower().Equals(package.PackageName.ToLower()));
 
 					projectPackages.Add(new NugetPackageInformationComparer(package, selectedDatum));
 
