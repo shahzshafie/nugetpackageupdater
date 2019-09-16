@@ -21,6 +21,8 @@ namespace Tests
 			_testExecutingPath = Path.GetDirectoryName(asm.Location);
 
 			_bugFolder = Path.Combine(_testExecutingPath, "Bugs");
+
+			Directory.Delete(_bugFolder, true);
 		}
 
 		[OneTimeTearDown]
